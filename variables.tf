@@ -24,7 +24,7 @@ variable "associate_public_ip_address" {
 
 variable "key_name" {
   description = "Name the key you will use to access the instance "
-  default     = "devopslab"
+  default     = "chef"
   }
 
 
