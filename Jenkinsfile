@@ -8,7 +8,7 @@ environment {
         stage('init') {
             steps {
 
-sh 'cd DevtoolsAWSLinux-ec2-instance && ${TERRAFORM_CMD} init -backend=true -input=false '
+sh '${TERRAFORM_CMD} init -backend=true -input=false '
 
 
             }
