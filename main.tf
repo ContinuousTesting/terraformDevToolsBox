@@ -4,6 +4,8 @@ terraform {
 
 provider "aws" {
   region = "${var.aws_region}"
+  access_key = "AKIATFJCZQ5LRVIPZZOA"
+  secret_key = "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"
 }
 
 resource "aws_instance" "awslinux" {
