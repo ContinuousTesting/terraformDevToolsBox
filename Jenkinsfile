@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh 'export AWS_SECRET_ACCESS_KEY=$(cat ~/.aws/key) && export AWS_ACCESS_KEY_ID=$(cat ~/.aws/keyid)  && ${TERRAFORM_CMD} plan -out=tfplan -input=false '
         script {
-          timeout(time: 10, unit: 'MINUTES') {
+          timeout(time: 1, unit: 'MINUTES') {
             input(id: "Deploy Gate", message: "Deploy Development Host  on ec2 small ?", ok: 'Deploy')
           }
         }
