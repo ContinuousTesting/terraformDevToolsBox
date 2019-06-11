@@ -24,6 +24,6 @@ pipeline {
     }
   }
   environment {
-    TERRAFORM_CMD = 'terraform'
+    TERRAFORM_CMD = '/usr/local/bin/terraform'
   }
 }
